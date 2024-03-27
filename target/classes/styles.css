@@ -1,0 +1,7 @@
+.vbox-style {
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+.background-v1 {
+    -fx-background-color: white;
+}
