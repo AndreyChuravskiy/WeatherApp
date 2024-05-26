@@ -35,7 +35,7 @@ public class WeatherApiClient {
             e.printStackTrace();
             response.setStatusCode(-1);
         }
-
+        System.out.println(response);
         return response;
     }
 }

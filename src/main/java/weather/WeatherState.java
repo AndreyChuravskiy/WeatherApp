@@ -3,6 +3,9 @@ package weather;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 @Getter
 @Setter
@@ -24,17 +27,17 @@ class Info {
 @Getter
 @Setter
 class Fact {
-    private int temp;
-    private int feels_like;
-    private int temp_water;
+    private double temp;
+    private double feels_like;
+    private double temp_water;
     private String icon;
     private String condition;
     private double wind_speed;
     private double wind_gust;
     private String wind_dir;
-    private int pressure_mm;
-    private int pressure_pa;
-    private int humidity;
+    private double pressure_mm;
+    private double pressure_pa;
+    private double humidity;
     private String daytime;
     private Boolean polar;
     private String season;
@@ -51,17 +54,18 @@ class Forecast {
     private String sunset;
     private int moon_code;
     private String moon_text;
-    private List<Parts> parts;
+    private List<Part> parts;
 }
 
 @Getter
 @Setter
-class Parts {
+class Part {
+    private double temp_water;
     private String part_name;
-    private int temp_min;
-    private int temp_max;
-    private int temp_avg;
-    private int feels_like;
+    private double temp_min;
+    private double temp_max;
+    private double temp_avg;
+    private double feels_like;
     private String icon;
     private String condition;
     private String daytime;
@@ -69,10 +73,10 @@ class Parts {
     private double wind_speed;
     private double wind_gust;
     private String wind_dir;
-    private int pressure_mm;
-    private int pressure_pa;
-    private int humidity;
-    private int prec_mm;
-    private int prec_period;
-    private int prec_prob;
+    private double pressure_mm;
+    private double pressure_pa;
+    private double humidity;
+    private double prec_mm;
+    private double prec_period;
+    private double prec_prob;
 }
